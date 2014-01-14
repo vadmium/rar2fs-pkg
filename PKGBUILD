@@ -7,7 +7,7 @@ arch=(i686 x86_64)
 license=(GPL3)
 url="https://code.google.com/p/$pkgname"
 depends=(fuse "libunrar<1:6")
-makedepends=("libunrar<1:6")
+makedepends=("libunrar>=1:5" "libunrar<1:6")
 
 source=("https://$pkgname.googlecode.com/files/$_rls.tar.gz")
 sha1sums=(43585590a73d5f8fb59605c43e172e5e73d12c8f)
