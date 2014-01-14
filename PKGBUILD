@@ -6,7 +6,9 @@ pkgdesc="Fuse file system for reading Rar archives"
 arch=(i686 x86_64)
 license=(GPL3)
 url="https://code.google.com/p/$pkgname"
-depends=(fuse "libunrar<1:6")
+
+# Exactly the same libunrar version 5.m.n is actually needed at run time
+depends=(fuse "libunrar>=1:5" "libunrar<1:6")
 makedepends=("libunrar>=1:5" "libunrar<1:6")
 
 source=("https://$pkgname.googlecode.com/files/$_rls.tar.gz")
