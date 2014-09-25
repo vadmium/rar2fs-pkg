@@ -10,7 +10,7 @@ url=https://code.google.com/p/rar2fs/
 # The "rar2fs" program loads the "libunrar" library at run time
 # using the exact version (5.m.n) installed at build time.
 # Also, the "libunrar" source code that "rar2fs" is built with
-# should probably the same version that is installed.
+# should probably be the same version that is installed.
 depends=(fuse "libunrar>=1:5.1" "libunrar<1:6")
 makedepends=("libunrar>=1:5.1" "libunrar<1:6")
 
